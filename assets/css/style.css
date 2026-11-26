@@ -234,3 +234,7 @@ time {
         scroll-behavior: auto;
     }
 }
+
+.journal-entry + .journal-entry {
+    margin-top: 20px;
+}
