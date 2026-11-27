@@ -3,7 +3,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
           content="Independent software development and cybersecurity portfolio.">
@@ -87,13 +88,13 @@
                     </div>
 
                     <div>
-                        <strong>4</strong>
+                        <strong>18</strong>
                         <span>Passing automated tests</span>
                     </div>
 
                     <div>
-                        <strong>1</strong>
-                        <span>Development phase completed</span>
+                        <strong>2</strong>
+                        <span>Working API endpoints</span>
                     </div>
 
                     <div>
@@ -110,26 +111,41 @@
                     <li>Persistent application logging</li>
                     <li>Local configuration management</li>
                     <li>Basic error handling</li>
-                    <li>Automated testing</li>
+                    <li>FastAPI backend</li>
+                    <li>Local client-server communication</li>
+                    <li>Backend health monitoring</li>
+                    <li>Configurable server startup</li>
+                    <li>Automated software testing</li>
                     <li>Git feature branch workflow</li>
                 </ul>
+
+                <h4>Technology stack</h4>
+
+                <div class="tags">
+                    <span>Python</span>
+                    <span>FastAPI</span>
+                    <span>Uvicorn</span>
+                    <span>HTTPX</span>
+                    <span>REST API</span>
+                    <span>Git</span>
+                </div>
 
                 <div class="project-stage">
                     <p>
                         <strong>Current stage:</strong>
-                        Application foundations complete.
+                        Initial backend foundation complete.
                     </p>
 
                     <p>
                         <strong>Next stage:</strong>
-                        Backend development.
+                        Database engineering.
                     </p>
                 </div>
 
                 <p class="muted">
-                    Nexus is currently a development project.
-                    Security monitoring, threat detection, and
-                    the graphical desktop interface have not
+                    Nexus is currently a local development project.
+                    Security monitoring, threat detection, authentication,
+                    and the graphical desktop interface have not
                     been implemented yet.
                 </p>
             </article>
@@ -148,11 +164,45 @@
                 <span>Git</span>
                 <span>Software Testing</span>
                 <span>Backend Development</span>
+                <span>API Development</span>
+                <span>Client-Server Architecture</span>
             </div>
         </section>
 
         <section id="journal">
             <h2>Engineering journal</h2>
+
+            <article class="journal-entry">
+                <time datetime="2026-11-27">
+                    November 27, 2026
+                </time>
+
+                <h3>Nexus: First working backend</h3>
+
+                <p>
+                    I built the initial Nexus backend using FastAPI
+                    and connected it to the existing Python console.
+                    The two applications can now communicate locally
+                    through an HTTP API.
+                </p>
+
+                <p>
+                    I tested what happens when the server becomes
+                    unavailable. The client reported the connection
+                    failure and continued running instead of crashing.
+                </p>
+
+                <p>
+                    I also added configurable server startup and
+                    expanded the automated test suite from four
+                    tests to eighteen. All eighteen passed.
+                </p>
+
+                <p>
+                    My next step is learning database integration
+                    so Nexus can begin storing application data.
+                </p>
+            </article>
 
             <article class="journal-entry">
                 <time datetime="2026-11-26">
@@ -162,8 +212,8 @@
                 <h3>Nexus: Application foundations</h3>
 
                 <p>
-                    Today I finished the initial Python application
-                    foundation for Nexus. The application can now
+                    I finished the initial Python application
+                    foundation for Nexus. The application can
                     accept basic commands, record its activity,
                     read local settings, and handle certain errors
                     without crashing.
@@ -181,12 +231,6 @@
                     using Git feature branches to separate new
                     development from the main project.
                     All four initial automated tests passed.
-                </p>
-
-                <p>
-                    The next step is building the backend server
-                    that will eventually communicate with the
-                    desktop application.
                 </p>
             </article>
 
