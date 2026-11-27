@@ -88,12 +88,12 @@
                     </div>
 
                     <div>
-                        <strong>18</strong>
+                        <strong>27</strong>
                         <span>Passing automated tests</span>
                     </div>
 
                     <div>
-                        <strong>2</strong>
+                        <strong>3</strong>
                         <span>Working API endpoints</span>
                     </div>
 
@@ -113,8 +113,12 @@
                     <li>Basic error handling</li>
                     <li>FastAPI backend</li>
                     <li>Local client-server communication</li>
-                    <li>Backend health monitoring</li>
                     <li>Configurable server startup</li>
+                    <li>PostgreSQL database integration</li>
+                    <li>Restricted database permissions</li>
+                    <li>Version-controlled database migrations</li>
+                    <li>Persistent organization records</li>
+                    <li>Backend health and readiness checks</li>
                     <li>Automated software testing</li>
                     <li>Git feature branch workflow</li>
                 </ul>
@@ -126,6 +130,9 @@
                     <span>FastAPI</span>
                     <span>Uvicorn</span>
                     <span>HTTPX</span>
+                    <span>PostgreSQL</span>
+                    <span>SQLAlchemy</span>
+                    <span>Alembic</span>
                     <span>REST API</span>
                     <span>Git</span>
                 </div>
@@ -133,20 +140,22 @@
                 <div class="project-stage">
                     <p>
                         <strong>Current stage:</strong>
-                        Initial backend foundation complete.
+                        Initial backend and database foundations
+                        implemented and tested locally.
                     </p>
 
                     <p>
                         <strong>Next stage:</strong>
-                        Database engineering.
+                        Identity and access management.
                     </p>
                 </div>
 
                 <p class="muted">
-                    Nexus is currently a local development project.
-                    Security monitoring, threat detection, authentication,
-                    and the graphical desktop interface have not
-                    been implemented yet.
+                    Nexus is currently a private development project.
+                    Authentication, organization-level access controls,
+                    security monitoring, threat detection, and the
+                    graphical desktop interface are not yet implemented.
+                    It is not intended for production use.
                 </p>
             </article>
         </section>
@@ -166,11 +175,55 @@
                 <span>Backend Development</span>
                 <span>API Development</span>
                 <span>Client-Server Architecture</span>
+                <span>SQL</span>
+                <span>Database Engineering</span>
             </div>
         </section>
 
         <section id="journal">
             <h2>Engineering journal</h2>
+
+            <article class="journal-entry">
+                <time datetime="2026-11-27">
+                    November 27, 2026
+                </time>
+
+                <h3>Nexus: Database integration</h3>
+
+                <p>
+                    I connected Nexus to PostgreSQL today using
+                    SQLAlchemy. The application can now save and
+                    retrieve organization records instead of relying
+                    entirely on temporary application data.
+                </p>
+
+                <p>
+                    The original database driver failed to load
+                    because of a Windows application control policy.
+                    I switched to a compatible Python driver rather
+                    than disabling the existing security policy.
+                </p>
+
+                <p>
+                    I also configured restricted database accounts
+                    and introduced Alembic migrations to manage
+                    changes to the database structure.
+                </p>
+
+                <p>
+                    The backend can now distinguish between being
+                    online and being ready to communicate with its
+                    database. I tested the live API endpoints and
+                    expanded the automated test suite from 18 to
+                    27 tests, all of which passed.
+                </p>
+
+                <p>
+                    My next objective is implementing authentication
+                    and access controls before introducing features
+                    that handle sensitive security data.
+                </p>
+            </article>
 
             <article class="journal-entry">
                 <time datetime="2026-11-27">
