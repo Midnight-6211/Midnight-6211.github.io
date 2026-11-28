@@ -1,8 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
     <header class="site-header">
@@ -60,6 +61,12 @@
                 I'm developing my skills through hands-on experience
                 and independent study.
             </p>
+
+            <p>
+                My approach emphasizes structured development,
+                security by design, automated testing,
+                documentation, and continuous improvement.
+            </p>
         </section>
 
         <section id="projects">
@@ -72,13 +79,15 @@
 
                 <p class="muted">
                     Independent cybersecurity software project
+                    &mdash; Version 0.0.1-dev
                 </p>
 
                 <p>
                     Nexus is a cybersecurity platform in development.
-                    The goal is to build a desktop application for
-                    threat detection, incident investigation,
-                    evidence management, and human-led incident response.
+                    The goal is to build a desktop application
+                    supported by a centralized backend for threat
+                    detection, incident investigation, evidence
+                    management, and human-led incident response.
                 </p>
 
                 <div class="metrics">
@@ -88,7 +97,7 @@
                     </div>
 
                     <div>
-                        <strong>27</strong>
+                        <strong>47</strong>
                         <span>Passing automated tests</span>
                     </div>
 
@@ -98,12 +107,22 @@
                     </div>
 
                     <div>
+                        <strong>3</strong>
+                        <span>Database migrations</span>
+                    </div>
+
+                    <div>
+                        <strong>3</strong>
+                        <span>Merged pull requests</span>
+                    </div>
+
+                    <div>
                         <strong>$0</strong>
                         <span>Additional development cost</span>
                     </div>
                 </div>
 
-                <h4>Completed development</h4>
+                <h4>Application foundation</h4>
 
                 <ul class="feature-list">
                     <li>Python application structure</li>
@@ -111,16 +130,57 @@
                     <li>Persistent application logging</li>
                     <li>Local configuration management</li>
                     <li>Basic error handling</li>
-                    <li>FastAPI backend</li>
+                </ul>
+
+                <h4>Backend infrastructure</h4>
+
+                <ul class="feature-list">
+                    <li>FastAPI REST API backend</li>
                     <li>Local client-server communication</li>
                     <li>Configurable server startup</li>
+                    <li>Backend health monitoring</li>
+                    <li>Database-aware readiness checks</li>
+                    <li>Connection failure handling</li>
+                </ul>
+
+                <h4>Database engineering</h4>
+
+                <ul class="feature-list">
                     <li>PostgreSQL database integration</li>
-                    <li>Restricted database permissions</li>
-                    <li>Version-controlled database migrations</li>
+                    <li>SQLAlchemy database connectivity</li>
+                    <li>Version-controlled Alembic migrations</li>
                     <li>Persistent organization records</li>
-                    <li>Backend health and readiness checks</li>
-                    <li>Automated software testing</li>
+                    <li>User and organization membership tables</li>
+                    <li>Database constraints and relationships</li>
+                    <li>Restricted database accounts</li>
+                </ul>
+
+                <h4>Identity and security foundations</h4>
+
+                <ul class="feature-list">
+                    <li>Salted password hashing and verification</li>
+                    <li>Password length validation</li>
+                    <li>Unique user identifiers</li>
+                    <li>Organization membership and role records</li>
+                    <li>Restricted administrative account provisioning</li>
+                    <li>Inactive-by-default user accounts</li>
+                    <li>Account lifecycle management</li>
+                    <li>Column-level database permissions</li>
+                    <li>Separation of database account responsibilities</li>
+                    <li>Loopback-only development services</li>
+                </ul>
+
+                <h4>Engineering practices</h4>
+
+                <ul class="feature-list">
+                    <li>Structured project planning and documentation</li>
+                    <li>Software architecture and security planning</li>
+                    <li>Threat modeling and risk management</li>
+                    <li>Automated regression testing</li>
+                    <li>Manual integration testing</li>
                     <li>Git feature branch workflow</li>
+                    <li>Pull requests and staged code review</li>
+                    <li>Repository backup and restoration testing</li>
                 </ul>
 
                 <h4>Technology stack</h4>
@@ -133,28 +193,49 @@
                     <span>PostgreSQL</span>
                     <span>SQLAlchemy</span>
                     <span>Alembic</span>
+                    <span>pg8000</span>
                     <span>REST API</span>
+                    <span>unittest</span>
+                    <span>SQL</span>
                     <span>Git</span>
+                    <span>GitHub</span>
                 </div>
 
                 <div class="project-stage">
                     <p>
                         <strong>Current stage:</strong>
-                        Initial backend and database foundations
-                        implemented and tested locally.
+                        Identity and account management foundations.
+                        Initial account provisioning, password
+                        protection, organization memberships, and
+                        restricted account lifecycle operations
+                        have been implemented on a development branch.
                     </p>
 
                     <p>
                         <strong>Next stage:</strong>
-                        Identity and access management.
+                        Authentication, authorization, session
+                        management, and organization-level access
+                        enforcement.
+                    </p>
+
+                    <p>
+                        <strong>Upcoming milestone:</strong>
+                        Development of the native graphical
+                        desktop interface.
                     </p>
                 </div>
 
                 <p class="muted">
+                    Last development update: November 27, 2026.
+                </p>
+
+                <p class="muted">
                     Nexus is currently a private development project.
-                    Authentication, organization-level access controls,
-                    security monitoring, threat detection, and the
-                    graphical desktop interface are not yet implemented.
+                    Identity foundations are under development,
+                    and complete authentication, authorization,
+                    organization-level data isolation, security
+                    monitoring, threat detection, and the graphical
+                    desktop interface are not yet implemented.
                     It is not intended for production use.
                 </p>
             </article>
@@ -177,11 +258,94 @@
                 <span>Client-Server Architecture</span>
                 <span>SQL</span>
                 <span>Database Engineering</span>
+                <span>Identity and Access Management</span>
+                <span>Secure Software Development</span>
+                <span>Security Architecture</span>
+                <span>Threat Modeling</span>
+                <span>Access Control</span>
+                <span>Desktop Application Development</span>
             </div>
         </section>
 
         <section id="journal">
             <h2>Engineering journal</h2>
+
+            <article class="journal-entry">
+                <time datetime="2026-11-27">
+                    November 27, 2026
+                </time>
+
+                <h3>Nexus: Identity and account management</h3>
+
+                <p>
+                    After completing the initial database
+                    foundation, I began developing the identity
+                    management components of Nexus.
+                </p>
+
+                <p>
+                    I created database structures for user accounts
+                    and organization memberships. These structures
+                    establish the foundation for managing identities
+                    and organization-specific roles.
+                </p>
+
+                <p>
+                    I implemented salted password hashing,
+                    password verification, and password length
+                    validation. Automated tests verify correct
+                    and incorrect passwords, unique salts,
+                    invalid stored hashes, and password
+                    length restrictions.
+                </p>
+
+                <p>
+                    I also developed a restricted administrative
+                    provisioning tool that creates user accounts
+                    and assigns organization memberships.
+                    Newly provisioned accounts are inactive
+                    by default.
+                </p>
+
+                <p>
+                    Rather than allowing one database account
+                    to control every operation, I separated
+                    responsibilities between database migrations,
+                    application operations, account provisioning,
+                    and account lifecycle management.
+                </p>
+
+                <p>
+                    I verified column-level database permissions
+                    to confirm that the account lifecycle operator
+                    can manage account status without receiving
+                    permission to read or modify password hashes,
+                    create users, or delete user accounts.
+                </p>
+
+                <p>
+                    The automated test suite expanded from
+                    27 to 47 tests, all of which passed.
+                    I also verified account provisioning,
+                    organization membership records, and account
+                    status retrieval against the local PostgreSQL
+                    database.
+                </p>
+
+                <p>
+                    These changes establish an initial identity
+                    management foundation, but they do not yet
+                    provide complete authentication or
+                    organization-level authorization.
+                </p>
+
+                <p>
+                    My next objective is implementing the
+                    authentication and access enforcement
+                    components before connecting user identities
+                    to the future desktop interface.
+                </p>
+            </article>
 
             <article class="journal-entry">
                 <time datetime="2026-11-27">
