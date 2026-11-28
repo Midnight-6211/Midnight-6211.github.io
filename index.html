@@ -2,24 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
-
     <meta name="description"
           content="Independent software development and cybersecurity portfolio.">
-
     <title>Midnight | Developer Portfolio</title>
-
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-
     <header class="site-header">
         <nav class="container navigation">
             <a class="brand" href="#home">MIDNIGHT / DEV</a>
-
             <div class="nav-links">
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
@@ -30,38 +24,29 @@
     </header>
 
     <main id="home" class="container">
-
         <section class="hero">
             <p class="eyebrow">DEVELOPER PORTFOLIO</p>
-
             <h1>Building software with security in mind.</h1>
-
             <p class="intro">
                 I'm a student developer interested in software
                 engineering, cybersecurity, networking, and
                 systems infrastructure.
             </p>
-
-            <a class="button" href="#projects">
-                Explore my work
-            </a>
+            <a class="button" href="#projects">Explore my work</a>
         </section>
 
         <section id="about">
             <h2>About me</h2>
-
             <p>
                 I learn by building projects, working through
                 technical problems, and documenting my progress.
             </p>
-
             <p>
                 My current focus is secure application development,
                 backend systems, and cybersecurity engineering.
                 I'm developing my skills through hands-on experience
                 and independent study.
             </p>
-
             <p>
                 My approach emphasizes structured development,
                 security by design, automated testing,
@@ -71,17 +56,13 @@
 
         <section id="projects">
             <h2>Projects</h2>
-
             <article class="project-card">
                 <p class="status">IN DEVELOPMENT</p>
-
                 <h3>Nexus</h3>
-
                 <p class="muted">
                     Independent cybersecurity software project
                     &mdash; Version 0.0.1-dev
                 </p>
-
                 <p>
                     Nexus is a cybersecurity platform in development.
                     The goal is to build a desktop application
@@ -93,29 +74,24 @@
                 <div class="metrics">
                     <div>
                         <strong>10</strong>
-                        <span>Planning documents</span>
+                        <span>Initial planning documents</span>
                     </div>
-
                     <div>
-                        <strong>47</strong>
+                        <strong>62</strong>
                         <span>Passing automated tests</span>
                     </div>
-
                     <div>
-                        <strong>3</strong>
-                        <span>Working API endpoints</span>
+                        <strong>7</strong>
+                        <span>Implemented API endpoints</span>
                     </div>
-
                     <div>
-                        <strong>3</strong>
-                        <span>Database migrations</span>
+                        <strong>5</strong>
+                        <span>Applied database migrations</span>
                     </div>
-
                     <div>
-                        <strong>3</strong>
+                        <strong>4</strong>
                         <span>Merged pull requests</span>
                     </div>
-
                     <div>
                         <strong>$0</strong>
                         <span>Additional development cost</span>
@@ -123,7 +99,6 @@
                 </div>
 
                 <h4>Application foundation</h4>
-
                 <ul class="feature-list">
                     <li>Python application structure</li>
                     <li>Interactive command interface</li>
@@ -133,7 +108,6 @@
                 </ul>
 
                 <h4>Backend infrastructure</h4>
-
                 <ul class="feature-list">
                     <li>FastAPI REST API backend</li>
                     <li>Local client-server communication</li>
@@ -144,7 +118,6 @@
                 </ul>
 
                 <h4>Database engineering</h4>
-
                 <ul class="feature-list">
                     <li>PostgreSQL database integration</li>
                     <li>SQLAlchemy database connectivity</li>
@@ -156,7 +129,6 @@
                 </ul>
 
                 <h4>Identity and security foundations</h4>
-
                 <ul class="feature-list">
                     <li>Salted password hashing and verification</li>
                     <li>Password length validation</li>
@@ -164,14 +136,29 @@
                     <li>Organization membership and role records</li>
                     <li>Restricted administrative account provisioning</li>
                     <li>Inactive-by-default user accounts</li>
-                    <li>Account lifecycle management</li>
+                    <li>Account activation and deactivation</li>
                     <li>Column-level database permissions</li>
                     <li>Separation of database account responsibilities</li>
                     <li>Loopback-only development services</li>
                 </ul>
 
-                <h4>Engineering practices</h4>
+                <h4>Authentication and access enforcement</h4>
+                <ul class="feature-list">
+                    <li>Local username and password authentication</li>
+                    <li>Random bearer session tokens</li>
+                    <li>Server-side session storage using token hashes</li>
+                    <li>15-minute session expiration</li>
+                    <li>Logout and session revocation</li>
+                    <li>Account version-based session invalidation</li>
+                    <li>Organization membership retrieval</li>
+                    <li>Organization-scoped administrator permission checks</li>
+                    <li>Basic login throttling and session limits</li>
+                    <li>Redacted request validation errors</li>
+                    <li>Automated authentication and authorization tests</li>
+                    <li>Live authentication integration demonstration</li>
+                </ul>
 
+                <h4>Engineering practices</h4>
                 <ul class="feature-list">
                     <li>Structured project planning and documentation</li>
                     <li>Software architecture and security planning</li>
@@ -184,7 +171,6 @@
                 </ul>
 
                 <h4>Technology stack</h4>
-
                 <div class="tags">
                     <span>Python</span>
                     <span>FastAPI</span>
@@ -194,6 +180,7 @@
                     <span>SQLAlchemy</span>
                     <span>Alembic</span>
                     <span>pg8000</span>
+                    <span>Pydantic</span>
                     <span>REST API</span>
                     <span>unittest</span>
                     <span>SQL</span>
@@ -204,46 +191,44 @@
                 <div class="project-stage">
                     <p>
                         <strong>Current stage:</strong>
-                        Identity and account management foundations.
-                        Initial account provisioning, password
-                        protection, organization memberships, and
-                        restricted account lifecycle operations
-                        have been implemented on a development branch.
+                        Initial identity and access management
+                        foundation implemented and tested in the
+                        local development environment.
                     </p>
-
                     <p>
                         <strong>Next stage:</strong>
-                        Authentication, authorization, session
-                        management, and organization-level access
-                        enforcement.
+                        Native Windows graphical desktop interface,
+                        beginning with a login window, backend
+                        connectivity, and authenticated navigation.
                     </p>
-
                     <p>
                         <strong>Upcoming milestone:</strong>
-                        Development of the native graphical
-                        desktop interface.
+                        Connect the desktop client to the local
+                        authentication API and establish the initial
+                        security operations workspace. PySide6 is the
+                        planned desktop framework.
                     </p>
                 </div>
 
                 <p class="muted">
                     Last development update: November 27, 2026.
                 </p>
-
                 <p class="muted">
-                    Nexus is currently a private development project.
-                    Identity foundations are under development,
-                    and complete authentication, authorization,
-                    organization-level data isolation, security
-                    monitoring, threat detection, and the graphical
-                    desktop interface are not yet implemented.
-                    It is not intended for production use.
+                    Nexus is a private, local development prototype.
+                    Its initial authentication and organization
+                    permission checks do not establish comprehensive
+                    tenant isolation or production security. Production
+                    TLS, MFA, durable security audit logging, enterprise
+                    identity integration, security monitoring, threat
+                    detection, and the graphical desktop interface
+                    remain outstanding. It is not intended for
+                    production use or real customer data.
                 </p>
             </article>
         </section>
 
         <section id="interests">
             <h2>Technical interests</h2>
-
             <div class="tags">
                 <span>Python</span>
                 <span>Software Engineering</span>
@@ -271,50 +256,94 @@
             <h2>Engineering journal</h2>
 
             <article class="journal-entry">
-                <time datetime="2026-11-27">
-                    November 27, 2026
-                </time>
-
-                <h3>Nexus: Identity and account management</h3>
-
+                <time datetime="2026-11-27">November 27, 2026</time>
+                <h3>Nexus: Authentication and access enforcement</h3>
                 <p>
-                    After completing the initial database
-                    foundation, I began developing the identity
-                    management components of Nexus.
+                    I extended the identity foundation with a local
+                    authentication API, temporary sessions, logout,
+                    and organization-specific administrator checks.
+                    The authentication component uses a separate
+                    database account with restricted read permissions.
                 </p>
+                <p>
+                    Sessions use randomly generated tokens, with
+                    token hashes stored in server memory. I added
+                    session expiration and account version checks
+                    to support invalidation when an account's
+                    status or password changes.
+                </p>
+                <p>
+                    The automated test suite grew from 47 to 62
+                    passing tests. The additional tests exercise
+                    authentication failures, expired and revoked
+                    sessions, account version changes, role checks,
+                    organization membership changes, and basic
+                    login throttling.
+                </p>
+                <p>
+                    I tested the authentication workflow against
+                    the running backend and PostgreSQL database.
+                    A disposable administrator account successfully
+                    authenticated, retrieved its membership records,
+                    and passed its own organization's administrator
+                    check. Access to another organization was denied.
+                    After logout, the previous session was rejected.
+                </p>
+                <p>
+                    During integration testing, I encountered a
+                    port conflict caused by attempting to start a
+                    second backend instance. I continued testing
+                    with one local server and completed the successful
+                    authentication and logout demonstration.
+                </p>
+                <p>
+                    I documented the local identity setup and its
+                    limitations. This milestone establishes a basis
+                    for a graphical login experience, not a complete
+                    production identity system or tenant isolation
+                    implementation.
+                </p>
+                <p>
+                    My next objective is developing the native
+                    Windows desktop interface and connecting it
+                    to the authentication API.
+                </p>
+            </article>
 
+            <article class="journal-entry">
+                <time datetime="2026-11-27">November 27, 2026</time>
+                <h3>Nexus: Identity and account management</h3>
+                <p>
+                    After completing the initial database foundation,
+                    I began developing the identity management
+                    components of Nexus.
+                </p>
                 <p>
                     I created database structures for user accounts
                     and organization memberships. These structures
                     establish the foundation for managing identities
                     and organization-specific roles.
                 </p>
-
                 <p>
-                    I implemented salted password hashing,
-                    password verification, and password length
-                    validation. Automated tests verify correct
-                    and incorrect passwords, unique salts,
-                    invalid stored hashes, and password
-                    length restrictions.
+                    I implemented salted password hashing, password
+                    verification, and password length validation.
+                    Automated tests verify correct and incorrect
+                    passwords, unique salts, invalid stored hashes,
+                    and password length restrictions.
                 </p>
-
                 <p>
                     I also developed a restricted administrative
                     provisioning tool that creates user accounts
-                    and assigns organization memberships.
-                    Newly provisioned accounts are inactive
-                    by default.
+                    and assigns organization memberships. Newly
+                    provisioned accounts are inactive by default.
                 </p>
-
                 <p>
-                    Rather than allowing one database account
-                    to control every operation, I separated
+                    Rather than allowing one database account to
+                    control every operation, I separated
                     responsibilities between database migrations,
                     application operations, account provisioning,
                     and account lifecycle management.
                 </p>
-
                 <p>
                     I verified column-level database permissions
                     to confirm that the account lifecycle operator
@@ -322,23 +351,19 @@
                     permission to read or modify password hashes,
                     create users, or delete user accounts.
                 </p>
-
                 <p>
-                    The automated test suite expanded from
-                    27 to 47 tests, all of which passed.
-                    I also verified account provisioning,
-                    organization membership records, and account
-                    status retrieval against the local PostgreSQL
-                    database.
+                    The automated test suite expanded from 27 to
+                    47 tests, all of which passed. I also verified
+                    account provisioning, organization membership
+                    records, and account status retrieval against
+                    the local PostgreSQL database.
                 </p>
-
                 <p>
                     These changes establish an initial identity
                     management foundation, but they do not yet
                     provide complete authentication or
                     organization-level authorization.
                 </p>
-
                 <p>
                     My next objective is implementing the
                     authentication and access enforcement
@@ -348,32 +373,25 @@
             </article>
 
             <article class="journal-entry">
-                <time datetime="2026-11-27">
-                    November 27, 2026
-                </time>
-
+                <time datetime="2026-11-27">November 27, 2026</time>
                 <h3>Nexus: Database integration</h3>
-
                 <p>
                     I connected Nexus to PostgreSQL today using
                     SQLAlchemy. The application can now save and
                     retrieve organization records instead of relying
                     entirely on temporary application data.
                 </p>
-
                 <p>
                     The original database driver failed to load
                     because of a Windows application control policy.
                     I switched to a compatible Python driver rather
                     than disabling the existing security policy.
                 </p>
-
                 <p>
                     I also configured restricted database accounts
                     and introduced Alembic migrations to manage
                     changes to the database structure.
                 </p>
-
                 <p>
                     The backend can now distinguish between being
                     online and being ready to communicate with its
@@ -381,7 +399,6 @@
                     expanded the automated test suite from 18 to
                     27 tests, all of which passed.
                 </p>
-
                 <p>
                     My next objective is implementing authentication
                     and access controls before introducing features
@@ -390,31 +407,24 @@
             </article>
 
             <article class="journal-entry">
-                <time datetime="2026-11-27">
-                    November 27, 2026
-                </time>
-
+                <time datetime="2026-11-27">November 27, 2026</time>
                 <h3>Nexus: First working backend</h3>
-
                 <p>
                     I built the initial Nexus backend using FastAPI
                     and connected it to the existing Python console.
                     The two applications can now communicate locally
                     through an HTTP API.
                 </p>
-
                 <p>
                     I tested what happens when the server becomes
                     unavailable. The client reported the connection
                     failure and continued running instead of crashing.
                 </p>
-
                 <p>
                     I also added configurable server startup and
                     expanded the automated test suite from four
                     tests to eighteen. All eighteen passed.
                 </p>
-
                 <p>
                     My next step is learning database integration
                     so Nexus can begin storing application data.
@@ -422,27 +432,20 @@
             </article>
 
             <article class="journal-entry">
-                <time datetime="2026-11-26">
-                    November 26, 2026
-                </time>
-
+                <time datetime="2026-11-26">November 26, 2026</time>
                 <h3>Nexus: Application foundations</h3>
-
                 <p>
                     I finished the initial Python application
-                    foundation for Nexus. The application can
-                    accept basic commands, record its activity,
-                    read local settings, and handle certain errors
-                    without crashing.
+                    foundation for Nexus. The application can accept
+                    basic commands, record its activity, read local
+                    settings, and handle certain errors without crashing.
                 </p>
-
                 <p>
                     I ran into several Python import errors while
-                    organizing the project files. I traced the
-                    problem back to the directory structure,
-                    corrected it, and successfully ran the application.
+                    organizing the project files. I traced the problem
+                    back to the directory structure, corrected it,
+                    and successfully ran the application.
                 </p>
-
                 <p>
                     I also introduced automated testing and started
                     using Git feature branches to separate new
@@ -452,19 +455,14 @@
             </article>
 
             <article class="journal-entry">
-                <time datetime="2026-11-25">
-                    November 25, 2026
-                </time>
-
+                <time datetime="2026-11-25">November 25, 2026</time>
                 <h3>Starting Nexus</h3>
-
                 <p>
                     I configured two development workstations,
                     established a private Git repository,
                     tested backup restoration, and completed
                     the initial project planning documents.
                 </p>
-
                 <p>
                     I decided to establish the project requirements
                     and security boundaries before writing application
@@ -473,20 +471,13 @@
                 </p>
             </article>
         </section>
-
     </main>
 
     <footer class="site-footer">
         <div class="container">
             <p>Midnight / Dev &mdash; Established 2026</p>
-
-            <p>
-                <a href="https://github.com/Midnight-6211">
-                    GitHub
-                </a>
-            </p>
+            <p><a href="https://github.com/Midnight-6211">GitHub</a></p>
         </div>
     </footer>
-
 </body>
 </html>
